@@ -4,177 +4,121 @@ html {
   background-color: rgb(235, 208, 173);
 }
 .header {
-  border: 1px solid black;
+  border: 2px solid red;
   padding: 15px;
   width: 100%;
   text-align: center;
   color: #000000;
   font-size: 15px;
+  background-color: forestgreen;
 }
 /*.header h1 {
   text-align: center;
 }
 */
-body {
+.aside {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 20%;
 }
-main {
-  height: 100%;
+.bigcontainer {
+  display: flex;
+  border: 5px solid yellow;
+  background-color: hotpink;
+}
+.stats {
+  height: 80vh;
+  width: 20vw;
+  border:2px solid blue;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+.stats1 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats2 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats3 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats4 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats5 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats6 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 .container {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  right: 50%;
 }
 .card {
-  height: 120px;
-  width: 120px;
-  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
   position: relative;
 }
 /* Make card image and back of card image overlap */
-.cardimg1 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg2 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg3 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg4 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg5 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg6 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg7 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg8 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg9 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg10 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg11 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg12 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg13 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg14 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg15 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg16 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg17 {
-  background-image: url("../images/lfz-card.jpg");
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-.cardimg18 {
+.cardimg {
   background-image: url("../images/lfz-card.jpg");
   height: 100%;
   width: 100%;
@@ -244,4 +188,7 @@ main {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
 }
