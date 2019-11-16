@@ -24,11 +24,6 @@ function handleCardClick(event) {
     if (firstFace === secondFace) {
       console.log('They match');
       matches++;
-      if (matches === max_matches) {
-        $('#myModal').removeClass('hidden');
-        console.log('the if modal runs');
-        games_played += 1;
-      }
       firstCardClicked = null;
       secondCardClicked = null;
     } else {
@@ -51,5 +46,21 @@ function displayStats() {
   $('.stats1').text(attempts);
   var accuracy = calculateAccuracy();
   $('.stats2').text(accuracy);
-  $('.stats6').text(games_played);
-}
+  if (matches === max_matches) {
+    $('#myModal').removeClass('hidden');
+    console.log('the if modal runs');
+    $('.resetbtn').on('click', resetStats);
+  }
+  function resetStats() {
+    matches = null;
+    attempts = null;
+    accuracy = null;
+    games_played += 1;
+    $('.cardimg').removeClass('hidden');
+    $('#myModal').addClass('hidden');
+    $('.stats1').text(null);
+    $('.stats2').text(null);
+    $('.stats6').text(games_played);
+
+  }
+  }
