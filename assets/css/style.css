@@ -1,16 +1,17 @@
 html {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(235, 208, 173);
+  background-color: #262626;
 }
 .header {
-  border: 2px solid red;
+  border: 3px solid #dfd8c8;
   padding: 15px;
   width: 100%;
   text-align: center;
   color: #000000;
   font-size: 15px;
-  background-color: forestgreen;
+  background-color: #a39274;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 /*.header h1 {
   text-align: center;
@@ -25,79 +26,93 @@ html {
 .bigcontainer {
   position: relative;
   display: flex;
-  border: 5px solid yellow;
-  background-color: hotpink;
+  border: 5px solid #262626  ;
+  background-color: #3f3f3f ;
 }
 .stats {
   height: 80vh;
   width: 20vw;
-  border:2px solid blue;
+  border:2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
-  background-color: white;
+  text-align: justify;
+  background-color:  #262626 ;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats1 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats2 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats3 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats4 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats5 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .stats6 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid green;
+  border: 2px solid #262626  ;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .row {
   display: flex;
@@ -115,7 +130,7 @@ html {
 .card {
   height: 100px;
   width: 100px;
-  border: 2px solid red;
+  border: 1px solid #a39274 ;
   position: relative;
 }
 /* Make card image and back of card image overlap */
@@ -193,21 +208,23 @@ html {
 .modal {
   position: absolute;
   right: 50%;
-  border: 2px solid white;
+  border: 2px solid #dfd8c8;
   z-index: 1;
   height: 50vh;
   width: 50vw;
-  background-color: black;
+  background-color: #3f3f3f;
 }
 .modalContent {
  /*position: relative; */
-  background: blue;
+  background: #a39274;
   margin: 15% auto;
   padding: 20px;
-  border: 2px solid green;
+  border: 2px solid #dfd8c8;
   width: 200px;
+  font-family: 'Nanum Gothic', sans-serif;
 
 }
+
 .modalhide {
   visibility: hidden;
 }

@@ -24,20 +24,16 @@ function handleCardClick(event) {
     if (firstFace === secondFace) {
       console.log('They match');
       matches++;
-      if (matches === max_matches) {
-        $('#myModal').removeClass('hidden');
-        console.log('the if modal runs');
-        games_played += 1;
-      }
       firstCardClicked = null;
       secondCardClicked = null;
     } else {
       setTimeout(function () {
         firstCardClicked.find('.cardimg').removeClass('hidden');
         secondCardClicked.find('.cardimg').removeClass('hidden');
+        // Secondcard click is giving uncaught reference error. Breaks the game.
         firstCardClicked = null;
         secondCardClicked = null;
-      }, 1500);
+      }, 500);
     }
   }
   attempts += 1;
@@ -48,8 +44,24 @@ function calculateAccuracy() {
   return accOutput;
 }
 function displayStats() {
-  $('.stats1').text(attempts);
+  $('.stats2').text(attempts);
   var accuracy = calculateAccuracy();
-  $('.stats2').text(accuracy);
-  $('.stats6').text(games_played);
-}
+  $('.stats4').text(accuracy);
+  if (matches === max_matches) {
+    $('#myModal').removeClass('hidden');
+    console.log('the if modal runs');
+    $('.resetbtn').on('click', resetStats);
+  }
+  function resetStats() {
+    matches = null;
+    attempts = null;
+    accuracy = null;
+    games_played += 1;
+    $('.cardimg').removeClass('hidden');
+    $('#myModal').addClass('hidden');
+    $('.stats2').text(null);
+    $('.stats4').text(null);
+    $('.stats6').text(games_played);
+
+  }
+  }
