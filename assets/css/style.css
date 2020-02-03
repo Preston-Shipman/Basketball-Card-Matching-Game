@@ -1,1 +1,194 @@
-
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(235, 208, 173);
+}
+.header {
+  border: 2px solid red;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  background-color: forestgreen;
+}
+/*.header h1 {
+  text-align: center;
+}
+*/
+.aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+.bigcontainer {
+  display: flex;
+  border: 5px solid yellow;
+  background-color: hotpink;
+}
+.stats {
+  height: 80vh;
+  width: 20vw;
+  border:2px solid blue;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+.stats1 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats2 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats3 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats4 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats5 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stats6 {
+  height: 18vh;
+  width: 18vw;
+  border: 2px solid green;
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  right: 50%;
+}
+.card {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+  position: relative;
+}
+/* Make card image and back of card image overlap */
+.cardimg {
+  background-image: url("../images/lfz-card.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.backimg1 {
+  background-image: url("../images/css-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg2 {
+  background-image: url("../images/docker-logo.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg3 {
+  background-image: url("../images/gitHub-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg4 {
+  background-image: url("../images/html-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg5 {
+  background-image: url("../images/js-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg6 {
+  background-image: url("../images/mysql-logo.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg7 {
+  background-image: url("../images/node-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg8 {
+  background-image: url("../images/php-logo.jpeg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backimg9 {
+  background-image: url("../images/react-logo.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
+}
