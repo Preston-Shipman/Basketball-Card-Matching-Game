@@ -23,6 +23,7 @@ html {
   width: 20%;
 }
 .bigcontainer {
+  position: relative;
   display: flex;
   border: 5px solid yellow;
   background-color: hotpink;
@@ -189,6 +190,28 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.modal {
+  position: absolute;
+  right: 50%;
+  border: 2px solid white;
+  z-index: 1;
+  height: 50vh;
+  width: 50vw;
+  background-color: black;
+}
+.modalContent {
+ /*position: relative; */
+  background: blue;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid green;
+  width: 200px;
+
+}
+.modalhide {
+  visibility: hidden;
+}
+
 .hidden {
   display: none;
 }
