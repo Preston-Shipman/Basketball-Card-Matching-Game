@@ -1,8 +1,9 @@
-html {
+/* html {
   height: 100vh;
   width: 100vw;
   background-color: #262626;
 }
+
 .header {
   border: 3px solid #dfd8c8;
   padding: 15px;
@@ -13,39 +14,38 @@ html {
   background-color: #a39274;
   font-family: 'Nanum Gothic', sans-serif;
 }
-/*.header h1 {
-  text-align: center;
-}
-*/
+
 .aside {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 20%;
 }
+
 .bigcontainer {
   position: relative;
   display: flex;
-  border: 5px solid #262626  ;
-  background-color: #3f3f3f ;
+  border: 5px solid #262626;
+  background-color: #3f3f3f;
 }
+
 .stats {
   height: 80vh;
   width: 20vw;
-  border:2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
   align-items: center;
   text-align: justify;
-  background-color:  #262626 ;
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats1 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -54,10 +54,11 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats2 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -66,10 +67,11 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats3 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -78,10 +80,11 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats4 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -90,10 +93,11 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats5 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -102,10 +106,11 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .stats6 {
   height: 18vh;
   width: 18vw;
-  border: 2px solid #262626  ;
+  border: 2px solid #262626;
   display: flex;
   flex: column;
   flex-wrap: wrap;
@@ -114,97 +119,111 @@ html {
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
 .container {
   height: 100%;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   right: 50%;
 }
+
 .card {
   height: 100px;
-  width: 100px;
-  border: 1px solid #a39274 ;
+  width: 170px;
+  border: 1px solid #a39274;
   position: relative;
 }
-/* Make card image and back of card image overlap */
+
 .cardimg {
-  background-image: url("../images/lfz-card.jpg");
+  background-image: url("../images/NBALogo.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
+  object-fit: contain;
 }
-.backimg1 {
-  background-image: url("../images/css-logo.png");
+
+.jerryWest {
+  background-image: url("../images/JerryWest.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg2 {
-  background-image: url("../images/docker-logo.jpg");
+
+.kareemAbudl-Jabbar {
+  background-image: url("../images/KareemAbdul-Jabbar.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg3 {
-  background-image: url("../images/gitHub-logo.png");
+
+.kobeBryant {
+  background-image: url("../images/KobeBryant.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg4 {
-  background-image: url("../images/html-logo.png");
+
+.larryBird {
+  background-image: url("../images/LarryBird.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg5 {
-  background-image: url("../images/js-logo.png");
+
+.lebronJames {
+  background-image: url("../images/LebronJames.png");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg6 {
-  background-image: url("../images/mysql-logo.jpg");
+
+.michealJordan {
+  background-image: url("../images/MichealJordan.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg7 {
-  background-image: url("../images/node-logo.png");
+
+.shaquilleOneal {
+  background-image: url("../images/ShaquilleOneal.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg8 {
-  background-image: url("../images/php-logo.jpeg");
+
+.wiltChamberlain {
+  background-image: url("../images/WiltChamberlain.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.backimg9 {
-  background-image: url("../images/react-logo.png");
+
+.stephCurry {
+  background-image: url("../images/StephCurry.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .modal {
   position: absolute;
   right: 50%;
@@ -214,15 +233,14 @@ html {
   width: 50vw;
   background-color: #3f3f3f;
 }
+
 .modalContent {
- /*position: relative; */
   background: #a39274;
   margin: 15% auto;
   padding: 20px;
   border: 2px solid #dfd8c8;
   width: 200px;
   font-family: 'Nanum Gothic', sans-serif;
-
 }
 
 .modalhide {
@@ -231,4 +249,4 @@ html {
 
 .hidden {
   display: none;
-}
+} */
