@@ -1,14 +1,14 @@
 $(document).ready(initializeApp);
 function initializeApp() {
-  $('.card').on('click', handleCardClick);//when user  clicks on the selected jquery dom, call the handleCardClick function
+  $('.card').on('click', handleCardClick);
   $('.modal').addClass('hidden');
 }
-var firstCardClicked = null;
-var secondCardClicked = null;
-var matches = null;
-var max_matches = 9;
-var attempts = null;
-var games_played = null;
+let firstCardClicked = null;
+let secondCardClicked = null;
+let matches = null;
+const max_matches = 9;
+let attempts = null;
+let games_played = null;
 
 
 function handleCardClick(event) {
@@ -19,8 +19,8 @@ function handleCardClick(event) {
   }
   else {
     secondCardClicked = $(event.currentTarget);
-    var firstFace = firstCardClicked.find('.face').css('background-image');
-    var secondFace = secondCardClicked.find('.face').css('background-image');
+    const firstFace = firstCardClicked.find('.face').css('background-image');
+    const secondFace = secondCardClicked.find('.face').css('background-image');
     if (firstFace === secondFace) {
       console.log('They match');
       matches++;
@@ -30,7 +30,6 @@ function handleCardClick(event) {
       setTimeout(function () {
         firstCardClicked.find('.cardimg').removeClass('hidden');
         secondCardClicked.find('.cardimg').removeClass('hidden');
-        // Secondcard click is giving uncaught reference error. Breaks the game.
         firstCardClicked = null;
         secondCardClicked = null;
       }, 500);
@@ -39,13 +38,15 @@ function handleCardClick(event) {
   attempts += 1;
   displayStats();
 }
+
 function calculateAccuracy() {
-   var accOutput = (attempts / matches);
-  return accOutput;
+  let accOutput = (attempts / matches);
+  let accuracyNum = accOutput.toFixed(1)
+  return accuracyNum;
 }
 function displayStats() {
   $('.stats2').text(attempts);
-  var accuracy = calculateAccuracy();
+  let accuracy = calculateAccuracy();
   $('.stats4').text(accuracy);
   if (matches === max_matches) {
     $('#myModal').removeClass('hidden');
@@ -62,6 +63,27 @@ function displayStats() {
     $('.stats2').text(null);
     $('.stats4').text(null);
     $('.stats6').text(games_played);
+  }
+  }
 
-  }
-  }
+  // function shuffle() {
+  //   const cardArray = [
+  //     "jerryWest",
+  //     "kareemAbdul-Jabbar",
+  //     "kobeBryant",
+  //     "larryBird",
+  //     "lebronJames",
+  //     "michealJordan",
+  //     "shaquilleOneal",
+  //     "wiltChamberlain",
+  //     "stephCurry"
+  //   ];
+  //   var m = cardArray.length, t, i;
+  //   while (m) {
+  //     i = Math.floor(Math.random() * m--);
+  //     t = cardArray[m];
+  //     cardArray[m] = cardArray[i];
+  //     cardArray[i] = t;
+  //   }
+  //   return cardArray;
+  // }
