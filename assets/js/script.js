@@ -1,8 +1,4 @@
-$(document).ready(initializeApp);
-function initializeApp() {
-  $('.card').on('click', handleCardClick);
-  $('.modal').addClass('hidden');
-}
+// $(document).ready(initializeApp);
 let firstCardClicked = null;
 let secondCardClicked = null;
 let matches = null;
@@ -10,8 +6,11 @@ const max_matches = 9;
 let attempts = null;
 let games_played = null;
 
-
-function handleCardClick(event) {
+new Promise(function initializeApp() {
+  // $('.card').on('click', handleCardClick)
+  $('.modal').addClass('hidden')
+.then(function handleCardClick(event) {
+  // $(".card").on("click", handleCardClick);
   $(event.currentTarget).find('.cardimg').addClass('hidden');
   console.log("only cardimg child: ", event.currentTarget)
   if (firstCardClicked === null) {
@@ -36,17 +35,21 @@ function handleCardClick(event) {
     }
   }
   attempts += 1;
-  displayStats();
-}
+  // displayStats();
+})
 
-function calculateAccuracy() {
-  let accOutput = (attempts / matches);
-  let accuracyNum = accOutput.toFixed(1)
-  return accuracyNum;
-}
-function displayStats() {
+// .then(function calculateAccuracy() {
+//   let accOutput = (attempts / matches);
+//   let accuracyNum = accOutput.toFixed(1)
+//   return accuracyNum;
+// })
+.then(function displayStats() {
   $('.stats2').text(attempts);
-  let accuracy = calculateAccuracy();
+  let accuracy = function calculateAccuracy() {
+    let accOutput = attempts / matches;
+    let accuracyNum = accOutput.toFixed(1);
+    return accuracyNum;
+  };
   $('.stats4').text(accuracy);
   if (matches === max_matches) {
     $('#myModal').removeClass('hidden');
@@ -64,7 +67,8 @@ function displayStats() {
     $('.stats4').text(null);
     $('.stats6').text(games_played);
   }
-  }
+  })
+})
 
   // function shuffle() {
   //   const cardArray = [

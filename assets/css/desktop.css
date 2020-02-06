@@ -1,0 +1,207 @@
+html {
+  background-color: #262626;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 345px) {
+  .header {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    background-color: blue;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .aside {
+    display: -webkit-flexbox;
+    flex-direction: column;
+    width: 100%;
+    object-fit: contain;
+  }
+  .bigcontainer {
+    position: relative;
+    display: -webkit-flexbox;
+    border: 5px solid #262626;
+    background-color: #3f3f3f;
+  }
+  .stats {
+    position: relative;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats1 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats2 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats3 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats4 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats5 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats6 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+  }
+  .card {
+    height: 10vw;
+    width: 10vw;
+    border: 1px solid #a39274;
+    position: relative;
+  }
+  .cardimg {
+    background-image: url("../images/NBALogo.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+  }
+  .jerryWest {
+    background-image: url("../images/JerryWest.jpg");
+  }
+  .kareemAbdul-Jabbar {
+    background-image: url("../images/KareemAbdul-Jabbar.jpg");
+  }
+  .kobeBryant {
+    background-image: url("../images/KobeBryant.jpg");
+  }
+  .larryBird {
+    background-image: url("../images/LarryBird.jpg");
+    background-repeat: no-repeat;
+  }
+  .lebronJames {
+    background-image: url("../images/LebronJames.png");
+    background-repeat: no-repeat;
+  }
+  .michealJordan {
+    background-image: url("../images/MichealJordan.jpg");
+    background-repeat: no-repeat;
+  }
+  .shaquilleOneal {
+    background-image: url("../images/ShaquilleOneal.jpg");
+    background-repeat: no-repeat;
+  }
+  .wiltChamberlain {
+    background-image: url("../images/WiltChamberlain.jpg");
+    background-repeat: no-repeat;
+  }
+  .stephCurry {
+    background-image: url("../images/StephCurry.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .face {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .modal {
+    position: absolute;
+    right: 50%;
+    border: 2px solid #dfd8c8;
+    z-index: 1;
+    height: 50vh;
+    width: 100%;
+    background-color: #3f3f3f;
+  }
+  .modalContent {
+    background: #a39274;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #dfd8c8;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .modalhide {
+    visibility: hidden;
+  }
+  .hidden {
+    display: none;
+  }
+}
