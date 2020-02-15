@@ -7,6 +7,7 @@ A Javascript memory matching application where you must match cards of some of y
 - jQuery
 - HTML5
 - CSS3
+- ES6
 
 # Live Demo
 Link: placeholder.
