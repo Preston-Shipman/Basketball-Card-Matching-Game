@@ -11,9 +11,14 @@ let attempts = null;
 let games_played = null;
 
 function handleCardClick(event) {
-  $(event.currentTarget)
+  let clickDisabled = false;
+  if (clickDisabled) {
+    return;
+  } else {
+    $(event.currentTarget)
     .find(".cardimg")
     .addClass("hidden");
+    $(".face").attr("disabled", "true");
   if (firstCardClicked === null) {
     firstCardClicked = $(event.currentTarget);
   } else {
@@ -25,7 +30,6 @@ function handleCardClick(event) {
       matches++;
       firstCardClicked = null;
       secondCardClicked = null;
-      $(".cardimg").attr("disabled", "true");
     } else {
       setTimeout(function() {
         firstCardClicked.find(".cardimg").removeClass("hidden");
@@ -33,11 +37,17 @@ function handleCardClick(event) {
         firstCardClicked = null;
         secondCardClicked = null;
       }, 500);
-      $(".cardimg").removeAttr("disabled");
     }
   }
+    clickDisabled = true;
+    setTimeout(function() {
+      clickDisabled = false;
+    }, 2000);
+  }
+
   attempts += 1;
   displayStats();
+  $(".face").removeAttr("disabled");
 }
 
 function calculateAccuracy() {
