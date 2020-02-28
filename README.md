@@ -13,7 +13,9 @@ A Javascript memory matching application where you must match cards of some of y
 Link: placeholder.
 
 # Features
-- Placeholder
+- App calculates accuracy of user
+- App determines win when all cards are matched
+- App will reset upon player choosing play again option
 
 # Example of App
 ![Imgur](https://i.imgur.com/OYLZ8EL.png)
