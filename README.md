@@ -16,4 +16,4 @@ Link: placeholder.
 - Placeholder
 
 # Example of App
-- Placeholder
+![Imgur](https://i.imgur.com/OYLZ8EL.png)
