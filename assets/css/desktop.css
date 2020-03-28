@@ -1,37 +1,39 @@
 html {
-  background-color: #262626;
+  background-color: #f5f2d0;
 }
 
-body {
-  margin: 0;
+  body {
+    position: relative;
+    display: -webkit-flexbox;
+    background-color: #3f3f3f;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-top: 20px;
+    background-color: #f5f2d0;
+    border: 5px solid red;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 @media screen and (min-width: 345px) {
   .header {
+    position: relative;
     width: 100%;
     text-align: center;
     color: #000000;
     font-size: 15px;
-    background-color: blue;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f2d0;
+    border: 5px solid black;
+    margin-top: 20px;
   }
-  .aside {
+
+
+  /* .aside {
     display: -webkit-flexbox;
     flex-direction: column;
     width: 100%;
     object-fit: contain;
-  }
-  .bigcontainer {
-    position: relative;
-    display: -webkit-flexbox;
-    border: 5px solid #262626;
-    background-color: #3f3f3f;
-  }
-  .stats {
+  } */
+
+  /* .stats {
     position: relative;
     border: 2px solid #262626;
     display: flex;
@@ -113,13 +115,13 @@ body {
     justify-content: center;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-  }
+  } */
   .row {
     display: flex;
     justify-content: space-between;
     margin: 1rem;
   }
-  .container {
+  .main {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -129,7 +131,7 @@ body {
   .card {
     height: 10vw;
     width: 10vw;
-    border: 1px solid #a39274;
+    border: 1px solid #000080;
     position: relative;
   }
   .cardimg {
@@ -140,38 +142,33 @@ body {
     position: absolute;
     background-position: center;
   }
-  .jerryWest {
-    background-image: url("../images/JerryWest.jpg");
+  .lakers {
+    background-image: url("../images/lakers.png");
   }
-  .kareemAbdul-Jabbar {
-    background-image: url("../images/KareemAbdul-Jabbar.jpg");
+  .clippers {
+    background-image: url("../images/clippers.png");
   }
-  .kobeBryant {
-    background-image: url("../images/KobeBryant.jpg");
+  .rockets {
+    background-image: url("../images/rockets.png");
   }
-  .larryBird {
-    background-image: url("../images/LarryBird.jpg");
-    background-repeat: no-repeat;
+  .warriors {
+    background-image: url("../images/warriors.png");
   }
-  .lebronJames {
-    background-image: url("../images/LebronJames.png");
-    background-repeat: no-repeat;
+  .bucks {
+    background-image: url("../images/bucks.png");
   }
-  .michealJordan {
-    background-image: url("../images/MichealJordan.jpg");
-    background-repeat: no-repeat;
+  .bulls {
+    background-image: url("../images/bulls.png");
   }
-  .shaquilleOneal {
-    background-image: url("../images/ShaquilleOneal.jpg");
-    background-repeat: no-repeat;
+  .mavericks {
+    background-image: url("../images/mavericks.png");
   }
-  .wiltChamberlain {
-    background-image: url("../images/WiltChamberlain.jpg");
-    background-repeat: no-repeat;
+  .raptors {
+    background-image: url("../images/raptors.png");
+
   }
-  .stephCurry {
-    background-image: url("../images/StephCurry.jpg");
-    background-repeat: no-repeat;
+  .timberwolves {
+    background-image: url("../images/timberwolves.png");
   }
 
   .face {
@@ -180,6 +177,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    image-rendering: optimizeQuality;
   }
   .modal {
     position: absolute;
