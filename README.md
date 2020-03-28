@@ -1,6 +1,6 @@
-# Basketball Card Matching Game
+# NBA Team Matching Game
 
-A Javascript memory matching application where you must match cards of some of your favorite basketball players! 
+A Javascript memory matching application where you must match cards with logos of some of your favorite teams! 
 
 # Technoligies Used
 - Javascript
@@ -19,3 +19,5 @@ Link: placeholder.
 
 # Example of App
 ![Imgur](https://i.imgur.com/OYLZ8EL.png)
+
+# Not affiliated with the NBA
