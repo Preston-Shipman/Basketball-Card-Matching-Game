@@ -10,7 +10,7 @@ const max_matches = 9;
 let attempts = null;
 let games_played = null;
 
-function handleCardClick(event) {
+const handleCardClick = (event) => {
   let clickDisabled = false;
   if (clickDisabled) {
     return;
@@ -40,7 +40,7 @@ function handleCardClick(event) {
     }
   }
     clickDisabled = true;
-    setTimeout(function() {
+    setTimeout(() => {
       clickDisabled = false;
     }, 2000);
   }
@@ -50,12 +50,12 @@ function handleCardClick(event) {
   $(".face").removeAttr("disabled");
 }
 
-function calculateAccuracy() {
+const calculateAccuracy = () => {
   let accOutput = attempts / matches;
   let accuracyNum = accOutput.toFixed(1);
   return accuracyNum;
 }
-function displayStats() {
+const displayStats = () => {
   $(".stats2").text(attempts);
   let accuracy = calculateAccuracy();
   $(".stats4").text(accuracy);
@@ -64,7 +64,7 @@ function displayStats() {
     console.log("the if modal runs");
     $(".resetbtn").on("click", resetStats);
   }
-  function resetStats() {
+  const resetStats = () => {
     matches = null;
     attempts = null;
     accuracy = null;
