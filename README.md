@@ -21,3 +21,4 @@ Link: placeholder.
 ![Imgur](https://i.imgur.com/OYLZ8EL.png)
 
 # Not affiliated with the NBA
+# App is a work in progress
