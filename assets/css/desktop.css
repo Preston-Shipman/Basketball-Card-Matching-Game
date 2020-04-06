@@ -417,7 +417,7 @@ html {
     display: flex;
     /* margin-top: 10px; */
   }
-  h1 {
+  .header-h1 {
     margin-left: 140px;
     color: #000000;
     display: block;
@@ -437,8 +437,8 @@ html {
     margin-left: -1px;
     margin-top: -1px;
     overflow: hidden;
-    /* padding: 2px;
-    margin-left: 1px; */
+    /* padding: 1px; */
+    margin-left: 0.5px;
   }
 
   /* .aside {
@@ -447,19 +447,24 @@ html {
     width: 100%;
     object-fit: contain;
   } */
-
-  /* .stats {
+  .you-win {
+    color: white;
+  }
+  .stats-text {
+    color: white;
+  }
+  .stats {
+    justify-content: center;
     position: relative;
-    border: 2px solid #262626;
     display: flex;
     flex: column;
     flex-wrap: wrap;
     align-items: center;
-    text-align: justify;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
   }
-  .stats1 {
+  .attempts {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -471,7 +476,7 @@ html {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
   }
-  .stats2 {
+  .number-of-attempts {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -483,7 +488,7 @@ html {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
   }
-  .stats3 {
+  .accuracy {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -495,7 +500,7 @@ html {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
   }
-  .stats4 {
+  .accuracy-percent {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -507,7 +512,7 @@ html {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
   }
-  .stats5 {
+  .games-played {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -519,7 +524,7 @@ html {
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
   }
-  .stats6 {
+  .amount-of-games {
     height: 100%;
     width: 100%;
     border: 2px solid #262626;
@@ -530,15 +535,26 @@ html {
     justify-content: center;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-  } */
-  /* .row {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    border: 2px solid green;
-  } */
+  }
+  button.resetbtn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid white;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  @media all and (max-width:30em) {
+    button.resetbtn{
+      display: block;
+      margin: 0.4em auto;
+    }
+  }
   .main {
     height: 100%;
     width: 100%;
@@ -610,21 +626,13 @@ html {
     image-rendering: optimizeQuality;
   }
   .modal {
-    position: absolute;
-    right: 50%;
-    border: 2px solid #dfd8c8;
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
     z-index: 1;
-    height: 50vh;
     width: 100%;
-    background-color: #3f3f3f;
-  }
-  .modalContent {
-    background: #a39274;
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid #dfd8c8;
-    width: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
+    background-color: fuchsia;
+    text-align: center;
   }
   .modalhide {
     visibility: hidden;
@@ -632,4 +640,7 @@ html {
   .hidden {
     display: none;
   }
+  /* .modal-h1 {
+    text-align: center;
+  } */
 }
