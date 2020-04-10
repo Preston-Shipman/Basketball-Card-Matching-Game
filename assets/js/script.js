@@ -10,7 +10,7 @@ const max_matches = 9;
 let attempts = null;
 let games_played = null;
 
-function handleCardClick(event) {
+const handleCardClick = (event) => {
   let clickDisabled = false;
   if (clickDisabled) {
     return;
@@ -40,7 +40,7 @@ function handleCardClick(event) {
     }
   }
     clickDisabled = true;
-    setTimeout(function() {
+    setTimeout(() => {
       clickDisabled = false;
     }, 2000);
   }
@@ -50,30 +50,30 @@ function handleCardClick(event) {
   $(".face").removeAttr("disabled");
 }
 
-function calculateAccuracy() {
+const calculateAccuracy = () => {
   let accOutput = attempts / matches;
   let accuracyNum = accOutput.toFixed(1);
   return accuracyNum;
 }
-function displayStats() {
-  $(".stats2").text(attempts);
+const displayStats = () => {
+  $(".number-of-attempts").text(attempts);
   let accuracy = calculateAccuracy();
-  $(".stats4").text(accuracy);
+  $(".accuracy-percent").text(accuracy);
   if (matches === max_matches) {
     $("#myModal").removeClass("hidden");
     console.log("the if modal runs");
     $(".resetbtn").on("click", resetStats);
   }
-  function resetStats() {
+  function resetStats()  {
     matches = null;
     attempts = null;
     accuracy = null;
     games_played += 1;
     $(".cardimg").removeClass("hidden");
     $("#myModal").addClass("hidden");
-    $(".stats2").text(null);
-    $(".stats4").text(null);
-    $(".stats6").text(games_played);
+    $(".number-of-attempts").text(null);
+    $(".accuracy-percent").text(null);
+    $(".amount-of-games").text(games_played);
   }
 }
 

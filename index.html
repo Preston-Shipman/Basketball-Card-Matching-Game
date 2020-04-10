@@ -15,7 +15,7 @@
 <body>
     <header>
       <div class="header">
-        <h1>NBA Team Matching</h1>
+        <h1 class="header-h1">NBA Team Matching</h1>
       </div>
     </header>
 
@@ -98,19 +98,17 @@
 
   <script src="./assets/js/script.js" defer></script>
   <div id="myModal" class="modal hidden">
-    <div class="modalContent">
-      <h1>You win!</h1>
-            <aside class="stats">
-              Stats
-              <div class="stats1">Your Attempts</div>
-              <div class="stats2"></div>
-              <div class="stats3">Your Accuracy</div>
-              <div class="stats4"></div>
-              <div class="stats5">Games Played</div>
-              <div class="stats6"></div>
-            </aside>
+      <h1 class="you-win">You win!</h1>
+            <div class="stats">
+              <div class="stats-text"> Stats </div>
+              <div class="attempts">Your Attempts</div>
+              <div class="number-of-attempts"></div>
+              <div class="accuracy">Your Accuracy</div>
+              <div class="accuracy-percent"></div>
+              <div class="games-played">Games Played</div>
+              <div class="amount-of-games"></div>
+            </div>
       <button class="resetbtn">Play again?</button>
-    </div>
   </div>
   </div>
   </body>
