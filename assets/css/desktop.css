@@ -4,14 +4,6 @@ html {
   max-height: 100%;
 }
 
-  .cardimg {
-    background-image: url("../images/NBALogo.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-    background-position: center;
-  }
   .lakers {
     background-image: url("../images/lakers.png");
   }
@@ -398,14 +390,279 @@ html {
 
 @media only screen and (min-width: 768px) {
   /* For landscape tablets */
+      .header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f2d0;
+    display: flex;
+    /* margin-top: 10px; */
+  }
+  .header-h1 {
+    margin-left: 1000px;
+    color: #000000;
+    display: block;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   /* For small laptops and desktop screens */
+      .header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f2d0;
+    display: flex;
+    /* margin-top: 10px; */
+  }
+  .header-h1 {
+    margin-left: 1000px;
+    color: #000000;
+    display: block;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /* For any large screen */
+    .header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f2d0;
+    display: flex;
+    /* margin-top: 10px; */
+  }
+  .header-h1 {
+    margin-left: 1000px;
+    color: #000000;
+    display: block;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  body {
+    display: inline-flex;
+    background-color: #3f3f3f;
+    flex-wrap: wrap;
+    background-color: #f5f2d0;
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    margin-top: -1px;
+    overflow: hidden;
+    /* padding: 1px; */
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+  }
+  /* .aside {
+    display: -webkit-flexbox;
+    flex-direction: column;
+    width: 100%;
+    object-fit: contain;
+  } */
+  .you-win {
+    color: white;
+  }
+  .stats-text {
+    color: white;
+  }
+  .stats {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+  }
+  .attempts {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .number-of-attempts {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .accuracy {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .accuracy-percent {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .games-played {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .amount-of-games {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  button.resetbtn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid white;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  @media all and (max-width:30em) {
+    button.resetbtn{
+      display: block;
+      margin: 0.4em auto;
+    }
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    /* margin-bottom: 15px; */
+    position: relative;
+    display: inline-flex;
+  }
+  .cardContainer {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 15px; */
+    position: relative;
+    display: inline-flex;
+  }
+  .card {
+    height: 15vh;
+    width: 30vw;
+    border: 1px solid #000080;
+    position: relative;
+    margin: 0.5%;
+  }
+  .cardimg {
+    background-image: url("../images/NBALogo.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+  }
+  .lakers {
+    background-image: url("../images/lakers.png");
+  }
+  .clippers {
+    background-image: url("../images/clippers.png");
+  }
+  .rockets {
+    background-image: url("../images/rockets.png");
+  }
+  .warriors {
+    background-image: url("../images/warriors.png");
+  }
+  .bucks {
+    background-image: url("../images/bucks.png");
+  }
+  .bulls {
+    background-image: url("../images/bulls.png");
+  }
+  .mavericks {
+    background-image: url("../images/mavericks.png");
+  }
+  .raptors {
+    background-image: url("../images/raptors.png");
+
+  }
+  .timberwolves {
+    background-image: url("../images/timberwolves.png");
+  }
+
+  .face {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: optimizeQuality;
+  }
+  .modal {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    z-index: 1;
+    width: 100%;
+    background-color: fuchsia;
+    text-align: center;
+  }
+  .modalhide {
+    visibility: hidden;
+  }
+  .hidden {
+    display: none;
+  }
+  .modal-h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 345px) {
@@ -434,11 +691,11 @@ html {
     border: 1px solid red;
     height: 100%;
     width: 100%;
-    margin-left: -1px;
     margin-top: -1px;
     overflow: hidden;
     /* padding: 1px; */
     margin-left: 0.5px;
+    margin-right: 0.5px;
   }
 
   /* .aside {
@@ -640,7 +897,7 @@ html {
   .hidden {
     display: none;
   }
-  /* .modal-h1 {
+  .modal-h1 {
     text-align: center;
-  } */
+  }
 }
