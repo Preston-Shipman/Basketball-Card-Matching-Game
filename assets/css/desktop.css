@@ -42,7 +42,7 @@ html {
     image-rendering: optimizeQuality;
   }
 
-/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 600px) { */
  /* For phones and smaller */
   /* .header {
     position: relative;
@@ -158,16 +158,16 @@ html {
     justify-content: center;
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-  } */
-  /* .row {
+  }
+  .row {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 1rem;
     border: 2px solid green;
-  } */
-  /* .main {
+  }
+  .main {
     display: flex;
     height: 70%;
     width: 100%;
@@ -212,11 +212,11 @@ html {
   .hidden {
     display: none;
   }
-} */
+}
 
-/* @media only screen and (min-width: 600px) { */
-  /* for portrait tablets and large phones */
-    /* .header {
+@media only screen and (min-width: 600px) { */
+  for portrait tablets and large phones */
+    .header {
     position: relative;
     width: 100%;
     text-align: center;
@@ -241,7 +241,7 @@ html {
     overflow-x: scroll
   } */
 
-  /* .aside {
+  .aside {
     display: -webkit-flexbox;
     flex-direction: column;
     width: 100%;
@@ -386,7 +386,7 @@ html {
   .hidden {
     display: none;
   }
-} */
+}
 
 @media only screen and (min-width: 768px) {
   /* For landscape tablets */
