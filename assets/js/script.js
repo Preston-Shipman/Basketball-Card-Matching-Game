@@ -77,24 +77,24 @@ const displayStats = () => {
   }
 }
 
-// function shuffle() {
-//   const cardArray = [
-//     "jerryWest",
-//     "kareemAbdul-Jabbar",
-//     "kobeBryant",
-//     "larryBird",
-//     "lebronJames",
-//     "michealJordan",
-//     "shaquilleOneal",
-//     "wiltChamberlain",
-//     "stephCurry"
-//   ];
-//   var m = cardArray.length, t, i;
-//   while (m) {
-//     i = Math.floor(Math.random() * m--);
-//     t = cardArray[m];
-//     cardArray[m] = cardArray[i];
-//     cardArray[i] = t;
-//   }
-//   return cardArray;
-// }
+function shuffle() {
+  const cardArray = [
+    "lakers",
+    "clippers",
+    "rockets",
+    "warriors",
+    "bucks",
+    "bulls",
+    "mavericks",
+    "raptors",
+    "timberwolves"
+  ];
+  let m = cardArray.length, t, i;
+  while (m) {
+    i = Math.floor(Math.random() * m--);
+    t = cardArray[m];
+    cardArray[m] = cardArray[i];
+    cardArray[i] = t;
+  }
+  return cardArray;
+}
