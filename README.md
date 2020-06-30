@@ -7,6 +7,7 @@ A Javascript memory matching application where you must match cards with logos o
 - jQuery
 - HTML5
 - CSS3
+- BootStrap
 - ES6
 
 # Live Demo
