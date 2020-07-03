@@ -41,13 +41,12 @@
     background-position: center;
     image-rendering: optimizeQuality;
   }
-  /* .card {
+  .cardCSS {
     height: 15vh;
     width: 30vw;
     border: 1px solid #000080;
-    position: relative;
     margin: 0.5%;
-  } */
+  }
   .cardimg {
     background-image: url("../images/NBALogo.jpg");
     height: 100%;
@@ -56,3 +55,181 @@
     position: absolute;
     background-position: center;
   }
+  .card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+@media only screen and (min-width: 600px) {
+    .header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f2d0;
+    border: 5px solid black;
+    margin-top: 20px;
+  }
+
+  body {
+    display: block;
+    background-color: #3f3f3f;
+    flex-wrap: wrap;
+    background-color: #f5f2d0;
+    border: 5px solid red;
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    width: 98%;
+    overflow-x: scroll
+  }
+
+  .aside {
+    display: -webkit-flexbox;
+    flex-direction: column;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* .stats {
+    position: relative;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats1 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats2 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats3 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats4 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats5 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .stats6 {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #262626;
+    display: flex;
+    flex: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+  } */
+  /* .row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border: 2px solid green;
+  } */
+  /* .main {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    height: 15%;
+    width: 30%;
+    border: 1px solid #000080;
+    position: relative;
+    margin: 0.5%;
+  }
+  .modal {
+    position: absolute;
+    right: 50%;
+    border: 2px solid #dfd8c8;
+    z-index: 1;
+    height: 50vh;
+    width: 100%;
+    background-color: #3f3f3f;
+  }
+  .modalContent {
+    background: #a39274;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #dfd8c8;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  .modalhide {
+    visibility: hidden;
+  }
+  .hidden {
+    display: none;
+  } */
+}
+}
