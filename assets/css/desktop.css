@@ -1,903 +1,417 @@
-html {
-  background-color: #f5f2d0;
-  overflow: hidden;
-  max-height: 100%;
+body{
+  margin: 0;
+  font-family: 'Nanum Gothic';
+  background-color: #fffdd0;
 }
 
-  .lakers {
-    background-image: url("../images/lakers.png");
-  }
-  .clippers {
-    background-image: url("../images/clippers.png");
-  }
-  .rockets {
-    background-image: url("../images/rockets.png");
-  }
-  .warriors {
-    background-image: url("../images/warriors.png");
-  }
-  .bucks {
-    background-image: url("../images/bucks.png");
-  }
-  .bulls {
-    background-image: url("../images/bulls.png");
-  }
-  .mavericks {
-    background-image: url("../images/mavericks.png");
-  }
-  .raptors {
-    background-image: url("../images/raptors.png");
 
-  }
-  .timberwolves {
-    background-image: url("../images/timberwolves.png");
-  }
-
-  .face {
-    height: 100%;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    image-rendering: optimizeQuality;
-  }
-
-@media only screen and (max-width: 600px) { */
- /* For phones and smaller */
-  /* .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f2d0;
-    border: 5px solid black;
-    margin-bottom: 10px;
-  }
-
-  body {
-    display: block;
-    background-color: #3f3f3f;
-    flex-wrap: wrap;
-    background-color: #f5f2d0;
-    border: 5px solid red;
-    margin: 0;
-    padding: 0;
-    height: 99vh;
-    width: 98vw;
-
-  } */
-
-  /* .aside {
-    display: -webkit-flexbox;
-    flex-direction: column;
-    width: 100%;
-    object-fit: contain;
-  } */
-
-  /* .stats {
-    position: relative;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: justify;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats1 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats2 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats3 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats4 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats5 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats6 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .row {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    border: 2px solid green;
-  }
-  .main {
-    display: flex;
-    height: 70%;
-    width: 100%;
-    align-items: center;
-  }
-  .cardContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-  }
-  .card {
-    height: 15%;
-    width: 30%;
-    border: 1px solid #000080;
-    position: relative;
-    margin: 0.5%;
-  }
-
-  .modal {
-    position: absolute;
-    right: 50%;
-    border: 2px solid #dfd8c8;
-    z-index: 1;
-    height: 50vh;
-    width: 100%;
-    background-color: #3f3f3f;
-  }
-  .modalContent {
-    background: #a39274;
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid #dfd8c8;
-    width: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .modalhide {
-    visibility: hidden;
-  }
-  .hidden {
-    display: none;
-  }
+header{
+  height: 15vh;
+  user-select: none;
 }
 
-@media only screen and (min-width: 600px) { */
-  for portrait tablets and large phones */
-    .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f2d0;
-    border: 5px solid black;
-    margin-top: 20px;
-  }
-
-  body {
-    display: block;
-    background-color: #3f3f3f;
-    flex-wrap: wrap;
-    background-color: #f5f2d0;
-    border: 5px solid red;
-    margin: 0;
-    padding: 0;
-    height: 99%;
-    width: 98%;
-    overflow-x: scroll
-  } */
-
-  .aside {
-    display: -webkit-flexbox;
-    flex-direction: column;
-    width: 100%;
-    object-fit: contain;
-  } */
-
-  /* .stats {
-    position: relative;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: justify;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats1 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats2 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats3 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats4 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats5 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .stats6 {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  } */
-  /* .row {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    border: 2px solid green;
-  } */
-  /* .main {
-    display: flex;
-    height: 70%;
-    width: 100%;
-    align-items: center;
-
-  }
-  .cardContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-
-  }
-  .card {
-    height: 15%;
-    width: 30%;
-    border: 1px solid #000080;
-    position: relative;
-    margin: 0.5%;
-  }
-
-  .modal {
-    position: absolute;
-    right: 50%;
-    border: 2px solid #dfd8c8;
-    z-index: 1;
-    height: 50vh;
-    width: 100%;
-    background-color: #3f3f3f;
-  }
-  .modalContent {
-    background: #a39274;
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid #dfd8c8;
-    width: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .modalhide {
-    visibility: hidden;
-  }
-  .hidden {
-    display: none;
-  }
+.display-game,
+.stats-container,
+.container{
+  display: flex;
+  margin:auto;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For landscape tablets */
-      .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background-color: #f5f2d0;
-    display: flex;
-    /* margin-top: 10px; */
-  }
-  .header-h1 {
-    margin-left: 1000px;
-    color: #000000;
-    display: block;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-  }
+.container{
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.display-game {
+  height: 80vh;
 }
 
-@media only screen and (min-width: 992px) {
-  /* For small laptops and desktop screens */
-      .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background-color: #f5f2d0;
-    display: flex;
-    /* margin-top: 10px; */
-  }
-  .header-h1 {
-    margin-left: 1000px;
-    color: #000000;
-    display: block;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-  }
+aside {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
 }
 
-@media only screen and (min-width: 1200px) {
-  /* For any large screen */
-    .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background-color: #f5f2d0;
-    display: flex;
-    /* margin-top: 10px; */
-  }
-  .header-h1 {
-    margin-left: 1000px;
-    color: #000000;
-    display: block;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+h1{
+  font-size: 1.5em;
+  margin-bottom: 20%;
+}
+
+p{
+  font-size: 1.5em;
+
+}
+
+.stats-container {
+  align-items: left;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.stats-content {
+  width: 95%;
+  height: 20%;
+  border-radius: 15px;
+  margin-bottom: 18%;
+
+}
+
+.extra-margin{
+  width: 100%;
+}
+
+
+main {
+  width: 100%;
+}
+
+.scene{
+  margin: 5px;
+  width: 15%;
+  height: 30.33%;
+  perspective: 600px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.back, .face{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position:center;
+  position: absolute;
+  border-width: 3px 3px;
+  backface-visibility: hidden;
+  border-radius: 15%;
+
+}
+
+.back{
+  background-color: black;
+  background-image: url("../images/NBALogo.jpg")
+}
+
+.face{
+  transform: rotateY(-180deg);
+}
+
+.unclickable {
+  pointer-events: none;
+  transform: rotateY(180deg);
+}
+
+.bucks{
+  background-color: black;
+  background-image: url("../images/bucks.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+}
+
+.bulls{
+  background-color: black;
+  background-image: url("../images/bulls.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+.clippers{
+  background-color: black;
+  background-image: url("../images/clippers.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+}
+
+.lakers {
+  background-color: black;
+  background-image: url("../images/lakers.png");
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  background-size: cover;
+}
+
+.mavericks{
+  background-color: black;
+  background-image: url("../images/mavericks.png");
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: cover;
+}
+
+.raptors{
+  background-color: black;
+  background-image: url("../images/raptors.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 25% 20%;
+  background-size: cover;
+}
+.rockets{
+  background-color: black;
+  background-image: url("../images/rockets.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+.warriors{
+  background-color: black;
+  background-image: url("../images/warriors.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.timberwolves{
+  background-color: black;
+  background-image: url("../images/timberwolves.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+}
+
+.hide{
+  display: none;
+}
+
+.modal{
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: none;
+  background-size: 80%;
+  background-color: #fffdd0;
+}
+
+#end-game p {
+  display: inline-block;
+  position: relative;
+
+}
+
+.modal .bottom-text{
+  display: inline-block;
+  position: relative;
+  bottom: 1%;
+  left: 39%;
+  width: 23%;
+}
+
+.button-container{
+  position: relative;
+  top: 24%;
+  left: 40%;
+  width: 58%;
   }
 
-  body {
-    display: inline-flex;
-    background-color: #3f3f3f;
-    flex-wrap: wrap;
-    background-color: #f5f2d0;
-    border: 1px solid red;
-    height: 100%;
-    width: 100%;
-    margin-top: -1px;
-    overflow: hidden;
-    /* padding: 1px; */
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-  }
-  /* .aside {
-    display: -webkit-flexbox;
-    flex-direction: column;
-    width: 100%;
-    object-fit: contain;
-  } */
-  .you-win {
-    color: white;
-  }
-  .stats-text {
-    color: white;
-  }
-  .stats {
-    justify-content: center;
-    position: relative;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 30px;
-  }
-  .attempts {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .number-of-attempts {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .accuracy {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .accuracy-percent {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .games-played {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .amount-of-games {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  button.resetbtn {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid white;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.2s;
-  }
-  @media all and (max-width:30em) {
-    button.resetbtn{
-      display: block;
-      margin: 0.4em auto;
+button{
+  font-family:  'Nathum Gothic';
+  font-size: 2rem;
+  display: inline-block;
+  background-color: transparent;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 2%;
+  cursor: pointer;
+  margin: 2%;
+  width: 39%;
+}
+
+a{
+  font-family: 'Nathum Gothic';
+  text-decoration: none;
+  color: black;
+  opacity: .5;
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+  .button-container{
+      top: 43%;
     }
   }
-  .main {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    /* margin-bottom: 15px; */
-    position: relative;
-    display: inline-flex;
-  }
-  .cardContainer {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    /* margin-bottom: 15px; */
-    position: relative;
-    display: inline-flex;
-  }
-  .card {
-    height: 15vh;
-    width: 30vw;
-    border: 1px solid #000080;
-    position: relative;
-    margin: 0.5%;
-  }
-  .cardimg {
-    background-image: url("../images/NBALogo.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-    background-position: center;
-  }
-  .lakers {
-    background-image: url("../images/lakers.png");
-  }
-  .clippers {
-    background-image: url("../images/clippers.png");
-  }
-  .rockets {
-    background-image: url("../images/rockets.png");
-  }
-  .warriors {
-    background-image: url("../images/warriors.png");
-  }
-  .bucks {
-    background-image: url("../images/bucks.png");
-  }
-  .bulls {
-    background-image: url("../images/bulls.png");
-  }
-  .mavericks {
-    background-image: url("../images/mavericks.png");
-  }
-  .raptors {
-    background-image: url("../images/raptors.png");
 
-  }
-  .timberwolves {
-    background-image: url("../images/timberwolves.png");
-  }
-
-  .face {
-    height: 100%;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    image-rendering: optimizeQuality;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+  img{
+    width: 40%;
   }
   .modal {
-    position: fixed;
-    top: 25%;
-    bottom: 25%;
-    z-index: 1;
-    width: 100%;
-    background-color: fuchsia;
-    text-align: center;
-  }
-  .modalhide {
-    visibility: hidden;
-  }
-  .hidden {
-    display: none;
-  }
-  .modal-h1 {
-    text-align: center;
-  }
-}
+      width: 52%;
+      top: 31%;
+    }
 
-@media screen and (min-width: 345px) {
-  .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background-color: #f5f2d0;
-    display: flex;
-    /* margin-top: 10px; */
-  }
-  .header-h1 {
-    margin-left: 140px;
-    color: #000000;
-    display: block;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-  }
-
-  body {
-    display: inline-flex;
-    background-color: #3f3f3f;
-    flex-wrap: wrap;
-    background-color: #f5f2d0;
-    border: 1px solid red;
-    height: 100%;
-    width: 100%;
-    margin-top: -1px;
-    overflow: hidden;
-    /* padding: 1px; */
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-  }
-
-  /* .aside {
-    display: -webkit-flexbox;
-    flex-direction: column;
-    width: 100%;
-    object-fit: contain;
-  } */
-  .you-win {
-    color: white;
-  }
-  .stats-text {
-    color: white;
-  }
-  .stats {
-    justify-content: center;
-    position: relative;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 30px;
-  }
-  .attempts {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .number-of-attempts {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .accuracy {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .accuracy-percent {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .games-played {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  .amount-of-games {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #262626;
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  button.resetbtn {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid white;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.2s;
-  }
-  @media all and (max-width:30em) {
-    button.resetbtn{
-      display: block;
-      margin: 0.4em auto;
+    .button-container{
+      top: 35%;
     }
   }
-  .main {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    /* margin-bottom: 15px; */
-    position: relative;
-    display: inline-flex;
-  }
-  .cardContainer {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    /* margin-bottom: 15px; */
-    position: relative;
-    display: inline-flex;
-  }
-  .card {
-    height: 15vh;
-    width: 30vw;
-    border: 1px solid #000080;
-    position: relative;
-    margin: 0.5%;
-  }
-  .cardimg {
-    background-image: url("../images/NBALogo.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-    background-position: center;
-  }
-  .lakers {
-    background-image: url("../images/lakers.png");
-  }
-  .clippers {
-    background-image: url("../images/clippers.png");
-  }
-  .rockets {
-    background-image: url("../images/rockets.png");
-  }
-  .warriors {
-    background-image: url("../images/warriors.png");
-  }
-  .bucks {
-    background-image: url("../images/bucks.png");
-  }
-  .bulls {
-    background-image: url("../images/bulls.png");
-  }
-  .mavericks {
-    background-image: url("../images/mavericks.png");
-  }
-  .raptors {
-    background-image: url("../images/raptors.png");
 
+
+
+
+@media screen and (max-width: 1200px ){
+  p {
+    font-size: 1.3rem;
   }
-  .timberwolves {
-    background-image: url("../images/timberwolves.png");
+  button {
+    font-size: 1.5rem;
   }
 
-  .face {
-    height: 100%;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    image-rendering: optimizeQuality;
-  }
   .modal {
-    position: fixed;
-    top: 25%;
-    bottom: 25%;
-    z-index: 1;
-    width: 100%;
-    background-color: fuchsia;
-    text-align: center;
+    top: 42%;
   }
-  .modalhide {
-    visibility: hidden;
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    p {
+        font-size: 1.5rem;
+    }
   }
-  .hidden {
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait), (max-width: 560px) {
+  .stats-container,
+  .stats-content{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  h1{
     display: none;
   }
-  .modal-h1 {
-    text-align: center;
+
+  .stats-container,
+  aside{
+    height:10vh;
+    width: 100vw;
+  }
+
+  .face,
+  .back{
+    height: 100%;
+    width: 100%;
+  }
+
+  header{
+    display: none;
+  }
+
+  main{
+    height: 85vh;
+  }
+
+  .display-game,
+  .container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .display-game{
+    height: 100%;
+  }
+  .scene {
+    width: 30%;
+    height: 15%;
+  }
+
+  .stats-content{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 8%;
+  }
+
+  .extra-margin{
+    margin-top: 40px;
+    margin-bottom: 0;
+
+  }
+
+  a{
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px ) and (orientation: landscape){
+  p {
+    font-size: 1rem;
+  }
+
+  .modal {
+    width: 52%;
+    top: 24%;
+  }
+
+  .button-container{
+    top: 28%;
+  }
+
+  .stats-content p {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 823px) {
+  .modal {
+      width: 52%;
+      top: 24%;
+    }
+
+    .button-container{
+      top: 35%;
+    }
+  }
+
+
+
+@media screen and (max-width: 703px ){
+  p {
+    font-size: 1rem;
+  }
+
+  aside {
+    width: 12%;
+  }
+
+  .scene{
+  width: 14%;
+  height: 30.33%;
+}
+}
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .modal {
+    width: 50%;
+    top: 21%
+  }
+
+  .button-container{
+    top: 26%;
   }
 }

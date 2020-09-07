@@ -1,115 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NBA Memory Match</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  ,  crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" media="(min-width: 345px)" type="text/css" href="./assets/css/desktop.css">
-  <title>NBA Team Card Matching Game</title>
-  <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/desktop.css">
+  <script src="assets/js/script.js"></script>
 </head>
-<body>
-    <header>
-      <div class="header">
-        <h1 class="header-h1">NBA Team Matching</h1>
-      </div>
-    </header>
 
+<body>
+  <div id="end-game" class="modal hide">
+    <div class="button-container">
+      <button id="reset_btn">play again?</button>
+    </div>
+  </div>
+
+
+  <header>
+    <div text="NBA Memory Match"></div>
+  </header>
+  <div class="display-game">
+    <aside>
+      <div class="stats-container">
+        <h1>Your Stats</h1>
+        <div class="extra-margin">
+          <div class="stats-content">
+            <p>Games Played</p>
+          </div>
+          <div id="games_played" class="stats-content">
+            <p>0</p>
+          </div>
+        </div>
+        <div class="extra-margin">
+          <div class="stats-content">
+            <p>Attempts</p>
+          </div>
+          <div id="attemps" class="stats-content">
+            <p>0</p>
+          </div>
+        </div>
+        <div class="extra-margin">
+          <div class="stats-content">
+            <p>Accuracy</p>
+          </div>
+          <div id="Accuracy" class="stats-content">
+            <p>0%</p>
+          </div>
+        </div>
+      </div>
+    </aside>
     <main>
-      <div class="cardContainer">
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face lakers"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face clippers"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face rockets"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face warriors"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face bucks"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face bulls"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face mavericks"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face raptors"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face timberwolves"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face lakers"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face clippers"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face rockets"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face warriors"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face bucks"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face raptors"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face mavericks"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face bulls"></div>
-        </div>
-        <div class="card">
-          <div class="cardimg"></div>
-          <div class="face timberwolves"></div>
-        </div>
+      <div class="container">
       </div>
     </main>
+  </div>
+</body>
 
-  <script src="./assets/js/script.js" defer></script>
-  <div id="myModal" class="modal hidden">
-      <h1 class="you-win">You win!</h1>
-            <div class="stats">
-              <div class="stats-text"> Stats </div>
-              <div class="attempts">Your Attempts</div>
-              <div class="number-of-attempts"></div>
-              <div class="accuracy">Your Accuracy</div>
-              <div class="accuracy-percent"></div>
-              <div class="games-played">Games Played</div>
-              <div class="amount-of-games"></div>
-            </div>
-      <button class="resetbtn">Play again?</button>
-  </div>
-  </div>
-  </body>
 </html>
