@@ -25,25 +25,21 @@ function intializeApp() {
 
 function handleCardClick(event) {
   if (lockGame || firstCardClicked !== null && secondCardClicked !== null) {
-    console.log("this is lockGame || firstCardClicked !== null && secondCardClicked !== null")
     return;
   }
   let $target = $(event.currentTarget);
   $target.addClass("unclickable");
   if ($target.find(".back").hasClass('unclickable')) {
-    console.log("this is unclickable if")
     return;
   }
   let face = $target.find(".face");
   let back = $target.find(".back");
 
   if (!firstCardClicked) {
-    console.log("this is !firstCardClicked")
     firstCardClicked = $target;
   }
 
   else {
-    console.log("this is the else to !firstCardClicked")
     secondCardClicked = $target;
     attemps++;
 
@@ -52,19 +48,16 @@ function handleCardClick(event) {
     let firstCardClickedURL = firstCardFace.css("background-image");
     let secondCardClickedURL = secondCardFace.css("background-image");
     if (firstCardClickedURL === secondCardClickedURL) {
-      console.log("this is if they match")
       matches++;
       let cardName = face.attr('class');
       firstCardClicked = null;
       secondCardClicked = null;
       if (matches === max_matches) {
-        console.log("this is if max matches are reached")
         setTimeout(endGameModal, 1500);
         games_played++;
       }
     }
     else {
-      console.log("this is if they dont match")
       lockGame = true;
       setTimeout(hideFrontCard, 1500);
     }
