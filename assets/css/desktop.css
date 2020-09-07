@@ -206,14 +206,6 @@ main {
 
 }
 
-.modal .bottom-text{
-  display: inline-block;
-  position: relative;
-  bottom: 1%;
-  left: 39%;
-  width: 23%;
-}
-
 .button-container{
   position: relative;
   top: 24%;
@@ -252,11 +244,6 @@ a{
   img{
     width: 40%;
   }
-  .modal {
-      width: 52%;
-      top: 31%;
-    }
-
     .button-container{
       top: 35%;
     }
@@ -272,11 +259,6 @@ a{
   button {
     font-size: 1.5rem;
   }
-
-  .modal {
-    top: 42%;
-  }
-
 }
 
 
@@ -357,12 +339,6 @@ a{
   p {
     font-size: 1rem;
   }
-
-  .modal {
-    width: 52%;
-    top: 24%;
-  }
-
   .button-container{
     top: 28%;
   }
@@ -374,11 +350,6 @@ a{
 }
 
 @media screen and (max-width: 823px) {
-  .modal {
-      width: 52%;
-      top: 24%;
-    }
-
     .button-container{
       top: 35%;
     }
@@ -406,11 +377,6 @@ a{
 and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : landscape) {
-  .modal {
-    width: 50%;
-    top: 21%
-  }
-
   .button-container{
     top: 26%;
   }
