@@ -1,100 +1,152 @@
-$(document).ready(initializeApp);
-function initializeApp() {
-  $(".card").on("click", handleCardClick);
-  $(".modal").addClass("hidden");
-}
+$(document).ready(intializeApp);
+
 let firstCardClicked = null;
 let secondCardClicked = null;
 let matches = null;
 const max_matches = 9;
-let attempts = null;
-let games_played = null;
+let attemps = null;
+let games_played = 0;
+let lockGame = false;
 
-const handleCardClick = (event) => {
-  let clickDisabled = false;
-  if (clickDisabled) {
+let classArray = ["bucks", "bulls", "clippers", "lakers", "mavericks", "raptors",
+  "rockets", "warriors", "timberwolves", "bucks", "bulls", "clippers",
+  "lakers", "mavericks", "raptors", "rockets", "warriors", "timberwolves"];
+
+let indexStart = 0;
+let speed = 100;
+let indexEnd = 0;
+
+function intializeApp() {
+  createCard();
+  $(".container").on('click', '.card', handleCardClick);
+  $("#reset_btn").on('click', resetGame);
+}
+
+
+function handleCardClick(event) {
+  if (lockGame || firstCardClicked !== null && secondCardClicked !== null) {
+    console.log("this is lockGame || firstCardClicked !== null && secondCardClicked !== null")
     return;
-  } else {
-    $(event.currentTarget)
-    .find(".cardimg")
-    .addClass("hidden");
-    $(".face").attr("disabled", "true");
-  if (firstCardClicked === null) {
-    firstCardClicked = $(event.currentTarget);
-  } else {
-    secondCardClicked = $(event.currentTarget);
-    const firstFace = firstCardClicked.find(".face").css("background-image");
-    const secondFace = secondCardClicked.find(".face").css("background-image");
-    if (firstFace === secondFace) {
-      console.log("They match");
+  }
+  let $target = $(event.currentTarget);
+  $target.addClass("unclickable");
+  if ($target.find(".back").hasClass('unclickable')) {
+    console.log("this is unclickable if")
+    return;
+  }
+  let face = $target.find(".face");
+  let back = $target.find(".back");
+
+  if (!firstCardClicked) {
+    console.log("this is !firstCardClicked")
+    firstCardClicked = $target;
+  }
+
+  else {
+    console.log("this is the else to !firstCardClicked")
+    secondCardClicked = $target;
+    attemps++;
+
+    let firstCardFace = firstCardClicked.find(".face");
+    let secondCardFace = secondCardClicked.find(".face");
+    let firstCardClickedURL = firstCardFace.css("background-image");
+    let secondCardClickedURL = secondCardFace.css("background-image");
+    if (firstCardClickedURL === secondCardClickedURL) {
+      console.log("this is if they match")
       matches++;
+      let cardName = face.attr('class');
       firstCardClicked = null;
       secondCardClicked = null;
-    } else {
-      setTimeout(function() {
-        firstCardClicked.find(".cardimg").removeClass("hidden");
-        secondCardClicked.find(".cardimg").removeClass("hidden");
-        firstCardClicked = null;
-        secondCardClicked = null;
-      }, 500);
+      if (matches === max_matches) {
+        console.log("this is if max matches are reached")
+        setTimeout(endGameModal, 1500);
+        games_played++;
+      }
     }
-  }
-    clickDisabled = true;
-    setTimeout(() => {
-      clickDisabled = false;
-    }, 2000);
+    else {
+      console.log("this is if they dont match")
+      lockGame = true;
+      setTimeout(hideFrontCard, 1500);
+    }
+    displayStats();
   }
 
-  attempts += 1;
+
+  function endGameModal() {
+    $("#end-game").removeClass("hide")
+  }
+
+  function hideFrontCard() {
+    firstCardClicked.removeClass("unclickable");
+    secondCardClicked.removeClass("unclickable");
+
+    firstCardClicked = null;
+    secondCardClicked = null;
+    lockGame = false;
+  }
+}
+
+
+function resetGame() {
+  $(".modal").addClass("hide");
+  matches = 0;
+  attemps = 0;
+
   displayStats();
-  $(".face").removeAttr("disabled");
+  $("#Accuracy p").text("0%");
+  $(".container").empty();
+  createCard();
+  $(".start-game").removeClass("hide");
+
 }
 
-const calculateAccuracy = () => {
-  let accOutput = attempts / matches;
-  let accuracyNum = accOutput.toFixed(1);
-  return accuracyNum;
+
+function calculateAccuracy() {
+  let accuracy = matches / attemps;
+  accuracy = Math.round(10000 * accuracy) / 100;
+  let accuracyStr = accuracy + '%';
+  return accuracyStr;
 }
-const displayStats = () => {
-  $(".number-of-attempts").text(attempts);
+
+
+function displayStats() {
   let accuracy = calculateAccuracy();
-  $(".accuracy-percent").text(accuracy);
-  if (matches === max_matches) {
-    $("#myModal").removeClass("hidden");
-    console.log("the if modal runs");
-    $(".resetbtn").on("click", resetStats);
-  }
-  function resetStats()  {
-    matches = null;
-    attempts = null;
-    accuracy = null;
-    games_played += 1;
-    $(".cardimg").removeClass("hidden");
-    $("#myModal").addClass("hidden");
-    $(".number-of-attempts").text(null);
-    $(".accuracy-percent").text(null);
-    $(".amount-of-games").text(games_played);
+  $("#games_played p").text(games_played);
+  $("#attemps p").text(attemps);
+  $("#Accuracy p").text(accuracy);
+}
+
+function createCard() {
+  let arr = shuffle(classArray);
+  let container = $(".container");
+  for (let index = 0; index < arr.length; index++) {
+    let sceneDiv = $("<div>").addClass("scene");
+    let currentCard = $("<div>").addClass("card");
+    let classCard = arr[index];
+    let faceOfCard = $("<div>").addClass("face " + classCard);
+    let backOfCard = $("<div>").addClass("back");
+
+    container.append(sceneDiv);
+    sceneDiv.append(currentCard);
+    currentCard.append(faceOfCard);
+    currentCard.append(backOfCard);
   }
 }
 
-function shuffle() {
-  const cardArray = [
-    "lakers",
-    "clippers",
-    "rockets",
-    "warriors",
-    "bucks",
-    "bulls",
-    "mavericks",
-    "raptors",
-    "timberwolves"
-  ];
-  let m = cardArray.length, t, i;
-  while (m) {
-    i = Math.floor(Math.random() * m--);
-    t = cardArray[m];
-    cardArray[m] = cardArray[i];
-    cardArray[i] = t;
+function shuffle(array) {
+  let currentIndex = array.length;
+  let temporaryValue;
+  let randomIndex;
+
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
   }
-  return cardArray;
+
+  return array;
+
 }
