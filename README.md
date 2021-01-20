@@ -18,6 +18,6 @@ Link: https://basketball-card-game.prestonshipman.com/
 - App will reset upon player choosing play again option
 
 # Example of App
-
+![](basketball-card-game.gif)
 
 # Not affiliated with the NBA
