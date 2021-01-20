@@ -1,7 +1,7 @@
 body{
   margin: 0;
   font-family: 'Nanum Gothic';
-  background-color: #fffdd0;
+  background-color: #F5F5F5;
 }
 
 
@@ -193,11 +193,12 @@ main {
   user-select: none;
   width: 100vw;
   height: 100vh;
+  right: 30px;
   position: fixed;
   z-index: 1;
   overflow: none;
   background-size: 80%;
-  background-color: #fffdd0;
+  background-color: #F5F5F5;
 }
 
 #end-game p {
