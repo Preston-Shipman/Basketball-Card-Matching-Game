@@ -2,7 +2,7 @@
 
 A Javascript memory matching application where you must match cards with logos of some of your favorite teams! 
 
-# Technoligies Used
+# Technologies Used
 - Javascript
 - jQuery
 - HTML5
