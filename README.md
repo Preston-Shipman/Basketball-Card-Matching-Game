@@ -1,4 +1,4 @@
-# NBA Team Matching Game
+# Basketball card game
 
 A Javascript memory matching application where you must match cards with logos of some of your favorite teams! 
 
