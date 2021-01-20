@@ -1,4 +1,4 @@
-# Basketball card game
+# Basketball-card-game
 
 A Javascript memory matching application where you must match cards with logos of some of your favorite teams! 
 
@@ -11,7 +11,7 @@ A Javascript memory matching application where you must match cards with logos o
 - ES6
 
 # Live Demo
-Link: placeholder.
+Link: https://basketball-card-game.prestonshipman.com/
 
 # Features
 - App calculates accuracy of user
