@@ -7,7 +7,6 @@ A Javascript memory matching application where you must match cards with logos o
 - jQuery
 - HTML5
 - CSS3
-- BootStrap
 - ES6
 
 # Live Demo
@@ -22,4 +21,3 @@ Link: https://basketball-card-game.prestonshipman.com/
 ![Imgur](https://i.imgur.com/OYLZ8EL.png)
 
 # Not affiliated with the NBA
-# App is a work in progress
